@@ -25,8 +25,6 @@ python -m venv apis
 
 # activar entorno virtual
 conda activate apis
-# o
-source apis/bin/activate
 
 # instalar librerías iniciales
 pip install pandas rich
