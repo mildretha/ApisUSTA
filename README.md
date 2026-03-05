@@ -63,7 +63,7 @@ pip install fastapi uvicorn
 
 - Ejecutar la aplicación
 
-uvicorn app_fastapi:app --reload
+uvicorn appfastapi:app --reload
 
 - Abrir documentación interactiva
 
