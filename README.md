@@ -25,7 +25,7 @@ Como parte práctica, se implementó un ejercicio de “API manual” que simula
 Adicionalmente, se implementó la gestión de dependencias del proyecto mediante el archivo requirements.txt, donde se registran las principales librerías utilizadas como pandas, rich y pydantic. Esto permite garantizar la reproducibilidad del entorno de desarrollo y facilita la instalación de las dependencias necesarias para ejecutar el proyecto.
 
 
-## Semana 3  Servidor Web y WSGI
+## Semana 3  Servidor Web y WSGI FLASK
 
 Un servidor web permite que aplicaciones respondan a solicitudes HTTP de los clientes. En Python, Flask funciona mediante WSGI (Web Server Gateway Interface), que es una interfaz estándar entre el servidor web y las aplicaciones Python.
 
@@ -44,5 +44,34 @@ Síncrono: las solicitudes se procesan una por una.
 Asíncrono: permite manejar múltiples solicitudes simultáneamente.
 
 Flask funciona principalmente de forma síncrona.
+
+
+## Semana 4  FASTAPI
+
+
+En esta semana se migró la API desarrollada previamente en Flask hacia FastAPI, un framework moderno para la construcción de APIs en Python basado en ASGI, lo que permite manejar múltiples solicitudes de forma más eficiente que el modelo tradicional WSGI. Durante la actividad se comprendió cómo el type hinting de Python funciona como fuente de verdad para la validación de datos, permitiendo que FastAPI genere automáticamente documentación interactiva mediante Swagger UI y Redoc. También se revisó de forma conceptual el uso de async/await para aplicaciones concurrentes. Como resultado de aprendizaje, se implementó una API funcional que reutiliza las funciones de limpieza de datos desarrolladas con Pandas, permitiendo ejecutar el servidor con Uvicorn y probar los endpoints directamente desde la documentación automática generada por FastAPI.
+
+Comandos utilizados>
+
+- Activar el entorno virtual
+
+conda activate apis
+
+- Instalar dependencias
+
+pip install fastapi uvicorn
+
+- Ejecutar la aplicación
+
+uvicorn app_fastapi:app --reload
+
+- Abrir documentación interactiva
+
+http://127.0.0.1:8000/docs
+
+- Documentación alternativa
+
+http://127.0.0.1:8000/redoc
+
 
 
