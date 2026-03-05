@@ -13,6 +13,8 @@ Repositorio para las actividades del curso de APIs.
 
 _python main.py_
 
+## Origen de datos
+Encuesta anual de empresas: ejercicio 2024 (provisional) – CSV
 
 ## Semana 2 – Fundamentos de APIs y Validación de Datos
 
